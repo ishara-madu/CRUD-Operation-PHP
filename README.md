@@ -3,4 +3,4 @@
 <br>
 <br>
 <br>
-![screenshot](screenshots/interface.png);
+![screenshot](screenshots/interface.png)
