@@ -45,18 +45,21 @@
         $id = $_POST['id'];
         $name = $_POST['name'];
         $sql = "INSERT INTO `user` (`id`, `name`) VALUES ('$id', '$name')";
-        $result = mysqli_query($conn, $sql);
+        mysqli_query($conn, $sql);
+        header("Refresh:0");
     }
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $name = $_POST['name'];
         $sql = "UPDATE `user` SET `name` = '$name' WHERE `user`.`id` = '$id'";
-        $result = mysqli_query($conn, $sql);
+        mysqli_query($conn, $sql);
+        header("Refresh:0");
     }
     if(isset($_POST['delete'])){
         $id = $_POST['id'];
         $sql = "DELETE FROM `user` WHERE `user`.`id` = '$id'";
-        $result = mysqli_query($conn, $sql);
+        mysqli_query($conn, $sql);
+        header("Refresh:0");
     }
 
     ?>
