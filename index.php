@@ -9,10 +9,10 @@
 </head>
 
 <body>
+    <form method="post">
     <?php
     include 'db.con.php';
     ?>
-    <form method="post">
         <div class="btn">
             <input type="number" name="id" id="" placeholder="Enter ID">
             <input type="text" name="name" id="" placeholder="Enter Name">
